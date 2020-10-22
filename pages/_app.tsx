@@ -1,7 +1,12 @@
-import '../styles/globals.css'
-import 'antd/dist/antd.css';
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+import React, { FC } from 'react';
+import { Button } from 'antd';
+import '../styles/app.less';
+import "../styles/antd.less";
 
-export default MyApp
+const App: FC = () => (
+    <div className="App">
+      <Button type="primary">Button hoo</Button>
+    </div>
+);
+
+export default App;
