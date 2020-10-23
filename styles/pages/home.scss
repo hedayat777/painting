@@ -1,0 +1,23 @@
+.mainPage{
+  background: url('https://www.spinxdigital.com/images/home-banner@2x.jpg') center top no-repeat;
+  background-size: cover;
+  height: 100%;
+  .container{
+    .pages{
+      .header{
+        .ant-menu{
+          background: transparent;
+        }
+        .ant-menu-horizontal{
+          border-bottom: none;
+        }
+        .ant-menu-horizontal > .ant-menu-item a{
+          color: white;
+        }
+        .leftMenu{
+          display: flex;
+        }
+      }
+    }
+  }
+}

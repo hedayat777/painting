@@ -1,12 +1,26 @@
-import React, { FC } from 'react';
-import { Button } from 'antd';
-import '../styles/app.less';
+import React, {FC} from 'react';
+import {ConfigProvider} from 'antd';
+import "../styles/app.less";
+import "../styles/general.scss";
 import "../styles/antd.less";
+import type {AppProps /*, AppContext */} from 'next/app'
 
-const App: FC = () => (
-    <div className="App">
-      <Button type="primary">Button hoo</Button>
-    </div>
-);
+function MyApp({Component, pageProps}: AppProps) {
+    return <ConfigProvider direction="rtl">
+        <Component {...pageProps} />
+    </ConfigProvider>
+}
 
-export default App;
+// Only uncomment this method if you have blocking data requirements for
+// every single page in your application. This disables the ability to
+// perform automatic static optimization, causing every page in your app to
+// be server-side rendered.
+//
+// MyApp.getInitialProps = async (appContext: AppContext) => {
+//   // calls page's `getInitialProps` and fills `appProps.pageProps`
+//   const appProps = await App.getInitialProps(appContext);
+
+//   return { ...appProps }
+// }
+
+export default MyApp

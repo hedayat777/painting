@@ -1,0 +1,375 @@
+@import "./colors.scss";
+
+.container {
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.dynamicContainer{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    width: 1600px;
+  }
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  display: flex!important;
+}
+
+.inline {
+  display: inline;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.none {
+  display: none !important;
+}
+
+.block {
+  display: block;
+}
+
+.centerAbsolute {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto
+}
+
+.relative {
+  position: relative
+}
+
+.whiteColor {
+  color: #ffffff;
+}
+
+.marginBottom1Em {
+  margin-bottom: 1em;
+}
+
+.marginBottom0 {
+  margin-bottom: 0 !important;
+}
+
+.marginBottom2Em {
+  margin-bottom: 2em;
+}
+
+.margin20-0 {
+  margin: 20px 0;
+}
+
+.marginBottom50 {
+  margin-bottom: 50px !important;
+}
+
+.paddingBottom40 {
+  padding-bottom: 40px;
+}
+
+.padding47 {
+  padding: 47px;
+}
+
+.marginTop53 {
+  margin-top: 53px !important;
+}
+
+.margin0 {
+  margin: 0 !important;
+}
+
+.marginBottom20 {
+  margin-bottom: 20px;
+}
+
+.font-size17 {
+  font-size: 17px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.paddingBottom11 {
+  padding-bottom: 11px !important;
+}
+
+.paddingBottom21 {
+  padding-bottom: 21px !important;
+}
+
+.justifyContentSpaceBetween {
+  justify-content: space-between;
+}
+
+.margin52-0 {
+  margin: 52px 0;
+}
+
+.marginBottom10 {
+  margin-bottom: 10px;
+}
+
+.marginBottom26 {
+  margin-bottom: 26px !important;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.padding4-37 {
+  padding: 4px 37px !important;
+}
+
+.top50 {
+  top: 50px;
+}
+
+.marginRight0 {
+  margin-right: 0;
+}
+
+.marginRight10 {
+  margin-right: 10px;
+}
+
+.rtl {
+  direction: ltr;
+  text-align: right;
+}
+
+.width20d {
+  width: 20%;
+}
+
+.ltr {
+  direction: ltr;
+}
+
+.margin26-0 {
+  margin: 26px 0;
+}
+
+.marginBottom60 {
+  margin-bottom: 60px;
+}
+
+.paddingBottom20 {
+  padding-bottom: 20px !important;
+}
+
+.margin13-0 {
+  margin: 13px 0;
+}
+
+.marginTop2em {
+  margin-top: 2em;
+}
+
+.alignCenter {
+  align-items: center;
+}
+
+.fontSize13 {
+  font-size: 13px;
+}
+
+.font-size16 {
+  font-size: 16px;
+}
+.fontSize17 {
+  font-size: 17px!important;
+}
+
+.fontSize12 {
+  font-size: 12px;
+}
+
+.fontSize20 {
+  font-size: 20px !important;
+}
+.rightAlign{
+  text-align: right!important;
+}
+.fontWeight600{
+  font-weight: 600;
+}
+.marginRight20 {
+  margin-right: 20px;
+}
+
+.marginLeft5 {
+  margin-left: 5px;
+}
+
+.marginLeft9 {
+  margin-left: 9px;
+}
+
+.marginLeft26 {
+  margin-left: 26px;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.leftAlign {
+  text-align: left;
+}
+
+.rightFloat {
+  float: right;
+}
+
+.leftFloat {
+  float: left;
+}
+
+.width100 {
+  width: 100%;
+}
+.width158{
+  width: 158px;
+}
+.marginTop15 {
+  margin-top: 15px;
+}
+
+.marginTop20 {
+  margin-top: 20px;
+}
+
+.marginTop40 {
+  margin-top: 40px;
+}
+
+.marginBottom56 {
+  margin-bottom: 56px !important;
+}
+.marginLeft10{
+  margin-left: 10px;
+}
+.end{
+  justify-content: flex-end;
+}
+.bgRed {
+  //background-color: $badge;
+}
+.marginLeft15{
+  margin-left: 15px;
+}
+.bgGreen {
+  //background-color: $green;
+}
+
+.bgGray {
+  //background-color: $menuColor;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.grid {
+  display: grid !important;
+}
+
+.rotate90 {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  transition: .2s ease;
+}
+
+.rotate0 {
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  -o-transform: rotate(0);
+  -ms-transform: rotate(0);
+  transform: rotate(0);
+  transition: .2s ease;
+}
+
+.font-size18 {
+  font-size: 18px !important;
+}
+
+.height100 {
+  height: 100%;
+}
+
+.justifyCenter {
+  justify-content: center;
+}
+
+.justifyContentSpaceAround {
+  justify-content: space-around;
+}
+
+.alignItems {
+  align-items: center;
+}
+
+///Loading
+.loading {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999999;
+  position: fixed;
+  background: #ffffff73;
+}
+
+#loading{
+  width: 116px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  circle{
+    //fill: $darkGreen;
+  }
+}
